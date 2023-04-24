@@ -35,4 +35,20 @@ public class Libro {
 		
 	}
 	
+	public boolean devolucion() {
+		
+		boolean exitoso = false;
+		
+		if (prestados < 0) {
+			
+			exitoso = true;
+			
+			prestados--;
+			
+		}
+		
+		return exitoso;
+		
+	}
+	
 }
